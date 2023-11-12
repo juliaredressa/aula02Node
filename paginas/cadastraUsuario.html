@@ -10,68 +10,65 @@
     <div class="container">
         <form action='/cadastraUsuario' method='GET' class="row g-3 needs-validation" novalidate>
             <fieldset class="border p-2">
-            <legend class="mb-3">Cadastro de usuário</legend>
+            <legend class="mb-3">Cadastro de produtos</legend>
             <div class="col-md-4">
               <label for="nome" class="form-label">Nome</label>
               <input type="text" class="form-control" id="nome" name="nome"  required>
               <div class="valid-feedback">
-                Por favor, informe seu nome!
+                Por favor, informe o nome!
               </div>
             </div>
+
             <div class="col-md-4">
-              <label for="sobrenome" class="form-label">Sobrenome</label>
-              <input type="text" class="form-control" id="sobrenome" name="sobrenome" required>
+              <label for="preco" class="form-label">Preço</label>
+              <input type="text" class="form-control" id="preco" name="preco" required>
               <div class="valid-feedback">
-                Por favor, informe seu sobrenome!
+                Por favor, informe o preço!
               </div>
             </div>
+
             <div class="col-md-4">
-              <label for="nomeUsuario" class="form-label">Nome do usuário</label>
+              <label for="codigo" class="form-label">Codigo</label>
               <div class="input-group has-validation">
-                <span class="input-group-text" id="inputGroupPrepend">@</span>
-                <input type="text" class="form-control" id="nomeUsuario" name="nomeUsuario" aria-describedby="inputGroupPrepend" required>
+                <input type="text" class="form-control" id="codigo" name="codigo" aria-describedby="inputGroupPrepend" required>
                 <div class="invalid-feedback">
-                Por favor, informe seu nome de usuário!
+                Por favor, informe o codigo!
                 </div>
               </div>
             </div>
+
             <div class="col-md-6">
-              <label for="cidade" class="form-label">Cidade</label>
-              <input type="text" class="form-control" id="cidade" name="cidade" required>
+              <label for="descricao" class="form-label">Descrição</label>
+              <input type="text" class="form-control" id="descricao" name="descricao" required>
               <div class="invalid-feedback">
-                Por favor, informe sua cidade!
+                Por favor, informe a Descrição!
               </div>
             </div>
+
             <div class="col-md-3">
-              <label for="uf" class="form-label">UF</label>
-              <select class="form-select" id="uf" name="uf">
-                <option selected disabled value="">Escolha um estado...</option>
-                    <option value="Padaria">Padaria</option>
-                    <option value="Carnes">Carnes</option>
-                    <option value="Mercearia">Mercearia</option>
-                    <option value="Matinais">Matinais</option>
-                    <option value="Frios">Frios</option>
-                    <option value="Laticínios">Laticínios</option>
-                    <option value="Bebidas">Bebidas</option>
-                    <option value="Ultidades domesticas">Ultidades domesticas</option>
-                    <option value="Limpeza">Limpeza</option>
-                    <option value="Higiene">Higiene</option>
-                    <option value="Hortifruti">Hortifruti</option>
-                    <option value="Não Listado">Não listado</option>
+              <label for="categoria" class="form-label">Categoria</label>
+              <select class="form-select" id="categoria" name="categoria">
+                <option selected disabled value="">Escolha um produto...</option>
+                <option value="Padaria">Padaria</option>
+                <option value="Carnes">Carnes</option>
+                <option value="Mercearia">Mercearia</option>
+                <option value="Matinais">Matinais</option>
+                <option value="Frios">Frios</option>
+                <option value="Laticínios">Laticínios</option>
+                <option value="Bebidas">Bebidas</option>
+                <option value="Ultidades domesticas">Ultidades domesticas</option>
+                <option value="Limpeza">Limpeza</option>
+                <option value="Higiene">Higiene</option>
+                <option value="Hortifruti">Horti-fruti</option>
+                <option value="Não Listado">Não listado</option>
               </select>
               <div class="invalid-feedback">
-                Por favor, informe a categoria do produto!
+                Por favor, informe a categoria!
               </div>
             </div>
-            <div class="col-md-3">
-              <label for="cep" class="form-label">CEP</label>
-              <input type="text" class="form-control" id="cep" name="cep">
-              <div class="invalid-feedback">
-                Por favor, informe CEP!
-              </div>
-            </div>
+            
             <div class="col-12 mt-2">
-              <button class="btn btn-primary" type="submit">Cadastrar</button>
+              <button class="btn btn-primary" type="submit" >Cadastrar</button>
             </div>
           </form>
         </fieldset>
