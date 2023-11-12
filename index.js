@@ -85,7 +85,7 @@ app.get('/', (requisicao, resposta) => {
 })
 
 //rota para processar o cadastro de usuarios endpoin = '/cadastraUsuarios.html'
-app.get('/cadastrarUsuario', processaCadastroUsuario)
+app.get('/cadastraUsuario', processaCadastroUsuario)
 
 app.listen(porta, host, () => {
     console.log(`Servidor executando na url http://${host}:${porta}`);
