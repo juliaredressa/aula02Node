@@ -82,7 +82,7 @@ app.get('/', (requisicao, resposta) => {
             </body>
             </html>
     `)
-})
+});
 
 //rota para processar o cadastro de usuarios endpoin = '/cadastraUsuarios.html'
 app.get('/cadastraUsuario', processaCadastroUsuario)
