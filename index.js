@@ -1,6 +1,4 @@
 import express from 'express';
-import path from 'path';0
-
 
 const porta = 3000;
 const host = 'localhost';
